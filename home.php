@@ -19,11 +19,11 @@
 </html>
 
 <!-- 
-BS  1. new game mode: roulette
-    2. local leaderboard, better display, export/share, count up how much lost/gained
-[X] 4. images on slots instead of numbers, maybe with scrolling animation
-    7. flesh out "about" section - disclosure of odds
-    8. light/dark mode switch
-    9. mobile layout change: hidden drop down menu for banner
-    10. actual website logo that navigates to home page
+    BS  1. new game mode: roulette
+        2. local leaderboard, better display, export/share, count up how much lost/gained
+    [X] 4. images on slots instead of numbers, maybe with scrolling animation
+    [X] 7. flesh out "about" section - disclosure of odds
+    [X] 8. light/dark mode switch
+        9. mobile layout change: hidden drop down menu for banner
+    [X] 10. actual website logo that navigates to home page
 -->

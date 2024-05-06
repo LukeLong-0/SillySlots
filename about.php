@@ -5,15 +5,20 @@
 <?php include ("header.php"); ?>
     <body>
 
-        <div class="flavortext">
-            <p style="font-size: larger;">Gambling is addictive and harmful when using real money.</p><br>
-            <p style="text-align: start !important;">Reasons why you should't use slot machines in real life:</p>
+        <div>
+            <p class="about_text"> Love the rush brought forth by the roll of the dice?<br></p>
+            <p class="about_text"> Tired of smelly, loud, expensive casinos?</p>
+            <p class="about_text"> Spent one too many dollars on Counter-Strike&#8482; cases or Gacha Game whaling?</p>
+            <p class="about_text"> THEN YOU'VE COME TO THE RIGHT PLACE!</p>
+            <p style="font-size: large; margin-left:12px;"> This website is 100% guilt-and-money-free!  Gambling - both physical and digital - is NOT a good way to earn money.  Any source of gambling that advertises guaranteed or easy profits is lying to you.  Good fun can absolutely be had with a mindset of expecting to spend money, not earn it.</p><br>
         </div>
+        <h3>DISCLOSURE OF ODDS:</h3>
         <ul class="list">
-            <li>They have incredibly unrealistical odds</li>
-            <li>Prices are deceptively high</li>
-            <li>They're lame and boring compared to card games</li>
-            <li>They're loud and annoying</li>
+            <li> <p><img src="assets/0_kroger.webp" class="listitem"> - 50% </p> </li>
+            <li> <p><img src="assets/1_dake.webp" class="listitem"> - 30% </p> </li>
+            <li> <p><img src="assets/2_imgcat.webp" class="listitem"> - 14% </p> </li>
+            <li> <p><img src="assets/3_luigi.webp" class="listitem"> - 5% </p> </li>
+            <li> <p><img src="assets/4_realshaq.webp" class="listitem"> - 1% </p> </li>
         </ul>
         
     </body>

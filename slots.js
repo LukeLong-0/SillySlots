@@ -1,8 +1,12 @@
-let nums = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4];
+// rarity distribution:
+let nums = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+            1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4] 
 var stop = 0; // number of times pulled 
 let prize = 0; // final result
-let totalprize = 0;
-let flavortext = ""; // tells you how good your result is
+let totalprize = 0; // cumulative score
+let flavortext = "..."; // tells you how good your result is
 let imgstring = ""; // path for displayed image on slot
 
 let a_elem = document.getElementById('a_slot'); // each slot's currently displayed number
@@ -46,7 +50,7 @@ function pull() {
 
 function reset() {
     stop = 0;
-    result_elem_1.innerHTML = "Awaiting score..."; result_elem_2.innerHTML = "";
+    result_elem_1.innerHTML = "Awaiting score"; result_elem_2.innerHTML = "...";
     shuffle();
 }
 
@@ -56,11 +60,10 @@ function results(){
     let a_res = Number(a_elem.children[0].getAttribute('alt')); 
     let b_res = Number(b_elem.children[0].getAttribute('alt')); 
     let c_res = Number(c_elem.children[0].getAttribute('alt'));
-    console.log(a_res, b_res, c_res)
 
     if (a_res == b_res == c_res) {
         prize = a_res * b_res * c_res;
-        prize = prize * 5;
+        prize = prize * 8;
     } 
     else if (a_res == b_res) {
         prize = a_res * b_res;

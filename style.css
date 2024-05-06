@@ -3,20 +3,62 @@ body {
     color: rgb(115, 246, 110) !important;
     font-family: Arial, Helvetica, sans-serif;
 }
+.dark-mode {
+    background-color: #dde8ff !important;
+    color: rgb(14, 31, 14) !important;
+}
     
 .slotsheader {
     font-size: x-large;
     margin-top: -15px;
     margin-bottom: -15px;   
     text-shadow: 0px 0px 1px #002d64, 0 0 0 #000, 0px 0px 13px #def;
-    margin-left: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo{
+    max-height:300px; 
+    max-width: 400px; 
+    margin-top: 12px; 
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width:590px) 
+{ 
+    .logo{
+        max-height: 100px; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+.theme_button{
+    position: fixed;
+    top: 4px;
+    right: 4px;
+    background-color: #002047;
+    color: #dde8ff; 
+    border-style: solid;
+    border-color: black;
+
 }
 
 .list {
     font-size: 175%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: lightskyblue;
-    padding-left: 12%;
+    padding-left: 6%;
+}
+
+.listitem {
+    max-width: 50px;
+    max-height: 50px;
+    display: inline;
+    text-align: center;
 }
 
 .flavortext {
@@ -85,7 +127,6 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
 }  
-
 @media screen and (max-width:500px)
 {
     .banner_item{
@@ -153,3 +194,9 @@ body {
     background-color: #002047;
     text-decoration: underline;
 }
+
+.about_text{
+    font-size: larger;
+    font-style: bold;
+}
+
