@@ -23,7 +23,8 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: large;
-    margin-left: 5%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
 
@@ -62,7 +63,6 @@ body {
     background-color: #004daa;
     flex: 1;
 }
-
 @media screen and (max-width:500px) 
 {
     .banner{
@@ -102,7 +102,7 @@ body {
     display: flex;
     align-content: center;
     background: #004daa !important;
-    width: 330px;
+    width: 462px;
     font-size: 100px;
     border-style: solid;
     border-color: black;
@@ -119,6 +119,9 @@ body {
     padding: 20px;
     border-color: white;
     border-style: solid;
+    width: 100px;
+    height: 100px;
+
 }
 
 .button_container {
@@ -139,6 +142,12 @@ body {
     margin-top: 2%;
     margin-bottom: 0%;
     cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 .button:hover{
     background-color: #002047;

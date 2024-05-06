@@ -2,16 +2,8 @@
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" type="text/css" href="style.css">
 <html lang="en">
-    <div class="slotsheader">
-        <h1>ETHICALLY STUPENDOUS SLOTS</h1>
-    </div>
+<?php include ("header.php"); ?>
     <body>
-        <div class="banner">
-            <a class="banner_item" href="home.html">HOME</a>
-            <a class="banner_item" href="slots.html">SLOTS</a>
-            <a class="banner_item" href="about.html">ABOUT</a> 
-            <a class="banner_item" href="contact.html">CONTACT</a> 
-        </div>
 
         <div class="flavortext">
             <p style="font-size: larger;">Gambling is addictive and harmful when using real money.</p><br>
@@ -23,6 +15,7 @@
             <li>They're lame and boring compared to card games</li>
             <li>They're loud and annoying</li>
         </ul>
+        
     </body>
     
 </html>

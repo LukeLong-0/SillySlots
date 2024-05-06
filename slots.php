@@ -2,17 +2,9 @@
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" type="text/css" href="style.css">
 <html lang="en">
-    <div class="slotsheader">
-        <h1>ETHICALLY STUPENDOUS SLOTS</h1>
-    </div>
+<?php include ("header.php"); ?>
     <body>
-        <div class="banner">
-            <a class="banner_item" href="home.html">HOME</a>
-            <a class="banner_item" href="slots.html">SLOTS</a>
-            <a class="banner_item" href="about.html">ABOUT</a> 
-            <a class="banner_item" href="contact.html">CONTACT</a> 
-        </div>
-        
+      
         <h2>Never stop gambling! If you keep going, you'll eventually win!</h2>
         <h3>Click on a slot or the "pull" button to pull a number!<br>Click the "reset" button to try again!</h3>
         <p style="text-align:center;" id="result1">Awaiting score...</p>
@@ -30,5 +22,6 @@
         </div>
         
         <script src="slots.js"></script>
+        
     </body>
 </html>
