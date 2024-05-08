@@ -11,6 +11,7 @@ let imgstring = ""; // path for displayed image on slot
 let pulls = 0; // total number of attempts
 let gameover = 0; // "game over" status
 let share = 0; // whether or not the share pop up is active
+let cost = 500; // cost to play consecutively
 
 let a_elem = document.getElementById('a_slot'); // each slot's currently displayed number
 let b_elem = document.getElementById('b_slot');
@@ -51,12 +52,11 @@ function imgpath(num) {
 
 function pull() {
     stop++;
-    pulls++;
 }
 
 function reset() {
     if (!gameover){
-        totalprize -= 500;
+        totalprize -= cost;
         stop = 0;
         result_elem_1.innerHTML = "Awaiting score"; 
         resultscore.innerHTML = "<br>";
@@ -70,6 +70,7 @@ function reset() {
 
 // calculate and display the resulting score prize
 function results(){
+    pulls++;
     let a_res = Number(a_elem.children[0].getAttribute('alt')); 
     let b_res = Number(b_elem.children[0].getAttribute('alt')); 
     let c_res = Number(c_elem.children[0].getAttribute('alt'));
@@ -152,7 +153,7 @@ function shareScore() {
         share = 1;
         document.getElementsByClassName("share")[0].innerHTML = "[Close] <span style=\"color:grey;font-style:italic;text-decoration:none;\">  (Copy & paste the text!)</span>";
         sharebox.hidden = false;
-        sharebox.innerHTML = "Wow! I earned a profit of " + totalprize + " V-Bucks from Guilt-Free Gambling Dot Com!<br>Best of all, it didn't cost me any real money! I LOVE gambling!<br>";
+        sharebox.innerHTML = "Wow! I earned a profit of " + totalprize + " V-Bucks from Guilt-Free Gambling Dot Com!<br>It only took me " + pulls + " attempts! I LOVE gambling!<br>";
     }
     else {
         share = 0;
