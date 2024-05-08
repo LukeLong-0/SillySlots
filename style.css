@@ -37,7 +37,7 @@ body {
 }
 
 .theme_button{
-    position: fixed;
+    position: absolute;
     top: 4px;
     right: 4px;
     background-color: #002047;
@@ -105,10 +105,10 @@ body {
     background-color: #004daa;
     flex: 1;
 }
-@media screen and (max-width:500px) 
+@media screen and (max-width:590px) 
 {
     .banner{
-        display: flex;
+        display: none;
         flex-direction: column;
         background-color: #004daa;
         flex: 1;
@@ -127,7 +127,7 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
 }  
-@media screen and (max-width:500px)
+@media screen and (max-width:590px)
 {
     .banner_item{
         margin-bottom: 3px;
@@ -137,6 +137,14 @@ body {
 .banner_item:hover{
     background-color: #002047;
 
+}
+
+.score{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: bold;
+    font-size: x-large;
 }
 
 .slotsmain{
@@ -200,3 +208,79 @@ body {
     font-style: bold;
 }
 
+.total_score{
+    margin-left: 4%;
+    text-decoration: underline;
+    font-size: large;
+}
+
+.share{
+    position: relative;
+    bottom: 12px;
+    font-size: medium;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.sharebox{
+    background-color: #004daa;
+    color: #dde8ff;
+    font-style: italic;
+    width: fit-content;
+    height: 100%;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 20px;
+}
+
+.mobilebutton{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 68px;
+    right: 8px;
+    background-color: #002047;
+    color: #dde8ff; 
+    border-style: solid;
+    border-color: black;
+    display: none;
+    max-width: 30px;
+    max-height: 30px;
+    border-color: black;
+}
+@media screen and (max-width:590px){
+    .mobilebutton{
+        display: initial;
+    }
+}
+
+.wheel{
+    display: flex;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    max-width: 100%;
+}
+
+.roulettescore{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: xx-large;
+    font-style: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: yellow;
+    text-align: center;
+    text-shadow: 0px 0px 1px #002d64, 0 0 0 #000, 0px 0px 13px #def;
+}

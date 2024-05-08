@@ -1,11 +1,30 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="style.css">
+<html lang="en">
+
 <div class="slotsheader">
-    <!-- <h1>ETHICALLY STUPENDOUS SLOTS</h1> -->
     <a href="home.php"><img src="assets/header.png" class="logo"></a>
     <button class="theme_button" onclick="changeTheme()">THEME</button>
 </div>
 
-<script>
-    function changeTheme() { document.body.classList.toggle("dark-mode"); } 
+<div onclick=mobileView()>
+    <img class="mobilebutton" src="assets/borger.png"></img>
+</div>
+
+<script language="javascript">
+    let expand = 0;
+    function changeTheme() { 
+        document.body.classList.toggle("dark-mode"); 
+    }
+    function mobileView() {
+        if (!expand){
+            document.getElementsByClassName("banner")[0].style.display = "flex"; 
+        } else {
+            document.getElementsByClassName("banner")[0].style.display = "none"; 
+        }
+        expand = !expand;
+    } 
 </script>
 
 <div class="banner">
